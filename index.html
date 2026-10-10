@@ -1,0 +1,1006 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C++ COURSE // Современный курс C++</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <span class="logo-icon">C++</span>
+        <span class="logo-text">COURSE</span>
+    </div>
+    <nav>
+        <ul id="menu">
+            <li><button type="button" class="nav-btn" data-page="home">Главная</button></li>
+            <li><button type="button" class="nav-btn" data-page="l1">01</button></li>
+            <li><button type="button" class="nav-btn" data-page="l2">02</button></li>
+            <li><button type="button" class="nav-btn" data-page="l3">03</button></li>
+            <li><button type="button" class="nav-btn" data-page="l4">04</button></li>
+            <li><button type="button" class="nav-btn" data-page="l5">05</button></li>
+            <li><button type="button" class="nav-btn" data-page="l6">06</button></li>
+            <li><button type="button" class="nav-btn" data-page="l7">07</button></li>
+            <li><button type="button" class="nav-btn" data-page="l8">08</button></li>
+            <li><button type="button" class="nav-btn" data-page="l9">09</button></li>
+            <li><button type="button" class="nav-btn" data-page="l10">10</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="content">
+
+<!-- ============ ГЛАВНАЯ ============ -->
+<section class="page active" id="home">
+    <h1>Научись решать сложные задачи</h1>
+    <h1 class="en">Learn how to solve complex problems</h1>
+
+    <p>Найди время изучить язык C++. Это один из самых мощных языков программирования в мире. На нём написаны игры, браузеры, операционные системы и программы, которые работают на Марсе.</p>
+    <p class="en">Take the time to learn C++. It is one of the most powerful languages in the world. Games, browsers, operating systems, and software that runs on Mars are written in it.</p>
+
+    <h2>Каждый может освоить программирование</h2>
+    <h2 class="en">Anyone can learn programming</h2>
+
+    <p>Неважно, какой это язык и насколько он сложный. Главное — чтобы была цель. Если ты читаешь это — значит, цель уже есть.</p>
+    <p class="en">It doesn't matter which language or how hard it is. The main thing is to have a goal. If you're reading this — the goal is already there.</p>
+
+    <h2>Почему C++ кажется сложным, хотя это не так</h2>
+    <h2 class="en">Why C++ seems hard, though it isn't</h2>
+
+    <p>Многие думают, что C++ — это что-то запредельно сложное. Мол, там «указатели», «память», «шаблоны» — и всё это только для гениев. На самом деле это миф. C++ — это такой же язык, как Python, JavaScript или Java. Просто он честнее: он не прячет от тебя то, что происходит внутри.</p>
+    <p class="en">Many people think C++ is insanely hard. Like it has "pointers", "memory", "templates" — and all of that is only for geniuses. In fact, that's a myth. C++ is just a language, like Python, JavaScript or Java. It's just more honest: it doesn't hide what happens inside.</p>
+
+    <p>Сложность — не в языке. Сложность — в задачах, которые ты на нём решаешь. Сам язык простой. Ты просто учишься думать. А думать — это навык, который тренируется.</p>
+    <p class="en">The difficulty is not in the language. The difficulty is in the tasks you solve with it. The language itself is simple. You just learn to think. And thinking is a skill you can train.</p>
+
+    <h2>Почему именно C++</h2>
+    <h2 class="en">Why C++ specifically</h2>
+
+    <ul>
+        <li>C++ быстрый — программы работают близко к железу</li>
+        <li class="en">C++ is fast — programs run close to the hardware</li>
+        <li>Он учит думать о памяти и производительности</li>
+        <li class="en">It teaches you to think about memory and performance</li>
+        <li>На нём написаны игры, браузеры, операционные системы</li>
+        <li class="en">Games, browsers and operating systems are written in it</li>
+        <li>Зная C++, легче выучить любой другой язык</li>
+        <li class="en">Knowing C++ makes any other language easier to learn</li>
+    </ul>
+
+    <h2>Как работают задачи</h2>
+    <h2 class="en">How tasks work</h2>
+
+    <p>В конце каждого урока — пустой редактор. Ты пишешь код сам, с нуля. При наборе работает подсветка и подсказки — как в CLion. Нажимаешь «Проверить» — скрипт смотрит, есть ли в твоём коде нужные команды.</p>
+    <p class="en">At the end of every lesson there's an empty editor. You write the code yourself, from scratch. While typing you get highlighting and autocomplete — like in CLion. Press "Check" — the script looks for the required commands in your code.</p>
+
+    <button type="button" class="btn-start" data-page="l1">Начать обучение</button>
+</section>
+
+<!-- ============ УРОК 1 ============ -->
+<section class="page" id="l1">
+    <h1>Урок 1. Что такое программа и зачем нужен C++</h1>
+    <h1 class="en">Lesson 1. What a program is and why C++ matters</h1>
+
+    <p>Этот урок — для полных чайников. Если ты никогда не программировал и не знаешь, что такое «код», «компилятор», «файл» — читай внимательно. Здесь объясняется буквально каждое слово.</p>
+    <p class="en">This lesson is for complete beginners. If you've never programmed and don't know what "code", "compiler" or "file" mean — read carefully. Every single word is explained here.</p>
+
+    <h2>Что такое компьютер и что такое программа</h2>
+    <h2 class="en">What a computer is and what a program is</h2>
+
+    <p>Компьютер — это машина, которая умеет выполнять команды. Сама по себе она ничего не делает: ей нужно сказать, что делать. Эти указания называются <b>программой</b>.</p>
+    <p class="en">A computer is a machine that can execute commands. By itself it does nothing: it needs to be told what to do. These instructions are called a <b>program</b>.</p>
+
+    <p>Программа — это список команд, записанных в файле. Ты пишешь команды на понятном тебе языке, а компьютер их выполняет.</p>
+    <p class="en">A program is a list of commands written in a file. You write commands in a language you understand, and the computer executes them.</p>
+
+    <h2>Что такое язык программирования</h2>
+    <h2 class="en">What a programming language is</h2>
+
+    <p>Компьютер не понимает русский или английский. Ему нужно объяснять на специальном языке — языке программирования. Языков много: Python, JavaScript, Java, C++, и другие.</p>
+    <p class="en">The computer doesn't understand Russian or English. It needs to be told in a special language — a programming language. There are many: Python, JavaScript, Java, C++, and others.</p>
+
+    <p>C++ — один из них. Он считается мощным, потому что даёт программисту контроль над всем, что происходит внутри. Но учить его — не сложнее, чем любой другой язык.</p>
+    <p class="en">C++ is one of them. It's considered powerful because it gives the programmer control over everything inside. But learning it is no harder than any other language.</p>
+
+    <h2>Что такое компилятор и зачем он нужен</h2>
+    <h2 class="en">What a compiler is and why we need it</h2>
+
+    <p>Компьютер понимает только <b>машинный код</b> — это нули и единицы, вроде 10110100. Писать такое вручную невозможно. Поэтому мы пишем на C++ — а специальная программа-переводчик превращает наш текст в машинный код.</p>
+    <p class="en">A computer understands only <b>machine code</b> — zeros and ones, like 10110100. Writing that by hand is impossible. So we write in C++, and a special translator program turns our text into machine code.</p>
+
+    <p>Эта программа-переводчик называется <b>компилятор</b>. Она берёт наш файл с кодом и делает из него файл, который компьютер может запустить.</p>
+    <p class="en">This translator is called a <b>compiler</b>. It takes our code file and produces a file the computer can run.</p>
+
+    <h2>Что скачать под свою систему</h2>
+    <h2 class="en">What to download for your system</h2>
+
+    <p><b>Windows:</b> скачай CLion с официального сайта <b>jetbrains.com/clion</b>. Это программа с кнопками, где всё в один клик. Она сама поставит компилятор, отладчик и подсветку кода.</p>
+    <p class="en"><b>Windows:</b> download CLion from the official site <b>jetbrains.com/clion</b>. It installs the compiler, debugger and syntax highlighting itself.</p>
+
+    <p><b>macOS:</b> тоже CLion с <b>jetbrains.com/clion</b>. Работает так же хорошо.</p>
+    <p class="en"><b>macOS:</b> also CLion from <b>jetbrains.com/clion</b>. Works just as well.</p>
+
+    <p><b>Linux:</b> открой терминал и введи команду:</p>
+    <p class="en"><b>Linux:</b> open the terminal and type:</p>
+
+<pre><code>sudo apt install g++</code></pre>
+
+    <p>Разбор: <b>sudo</b> — «выполни от имени администратора», <b>apt</b> — менеджер программ, <b>install</b> — «установи», <b>g++</b> — название компилятора C++.</p>
+    <p class="en">Breakdown: <b>sudo</b> — "run as administrator", <b>apt</b> — package manager, <b>install</b> — "install", <b>g++</b> — the C++ compiler's name.</p>
+
+    <h2>Разбор каждого страшного слова</h2>
+    <h2 class="en">Every scary word explained</h2>
+
+    <p><b>#include</b> — «включить». Команда, которая говорит компилятору «подключи сюда готовые инструменты».</p>
+    <p class="en"><b>#include</b> — "include". A command that tells the compiler "plug ready-made tools in here".</p>
+
+    <p><b>iostream</b> — «ай-о-стрим», от <b>i</b>nput-<b>o</b>utput-<b>stream</b> — «поток ввода-вывода». Инструменты для чтения с клавиатуры и вывода на экран.</p>
+    <p class="en"><b>iostream</b> — "input-output-stream". Tools for reading from the keyboard and printing to the screen.</p>
+
+    <p><b>int</b> — от «integer», целое число. Тип данных.</p>
+    <p class="en"><b>int</b> — from "integer". A data type.</p>
+
+    <p><b>main</b> — «главная». Имя функции, с которой начинается любая программа.</p>
+    <p class="en"><b>main</b> — "main". The name of the function every program starts with.</p>
+
+    <p><b>()</b> — скобки. Внутри них обычно параметры. У main их нет, поэтому пусто.</p>
+    <p class="en"><b>()</b> — parentheses. Usually parameters go inside. main has none, so they're empty.</p>
+
+    <p><b>{ }</b> — фигурные скобки. Открывают и закрывают тело функции.</p>
+    <p class="en"><b>{ }</b> — curly braces. Open and close the function body.</p>
+
+    <p><b>std::</b> — «стандарт». Как папка с готовыми инструментами. <b>std::cout</b> — «возьми cout из стандартной папки».</p>
+    <p class="en"><b>std::</b> — "standard". Like a folder with ready tools. <b>std::cout</b> — "take cout from the standard folder".</p>
+
+    <p><b>cout</b> — «си-аут», от <b>c</b>haracter <b>out</b>put — «вывод символов».</p>
+    <p class="en"><b>cout</b> — "character output".</p>
+
+    <p><b>&lt;&lt;</b> — две стрелки влево. «Толкают» данные в поток вывода.</p>
+    <p class="en"><b>&lt;&lt;</b> — two left arrows. They "push" data into the output stream.</p>
+
+    <p><b>cin</b> — «си-ин», от <b>c</b>haracter <b>in</b>put — «ввод символов».</p>
+    <p class="en"><b>cin</b> — "character input".</p>
+
+    <p><b>&gt;&gt;</b> — две стрелки вправо. «Вытягивают» данные из cin в переменную.</p>
+    <p class="en"><b>&gt;&gt;</b> — two right arrows. They "pull" data from cin into the variable.</p>
+
+    <p><b>std::endl</b> — «энд-лайн», конец строки. Переносит курсор на новую строку.</p>
+    <p class="en"><b>std::endl</b> — "end line". Moves the cursor to a new line.</p>
+
+    <p><b>string</b> — «строка». Набор символов. Тип данных для текста.</p>
+    <p class="en"><b>string</b> — "string". A sequence of characters. Data type for text.</p>
+
+    <p><b>;</b> — точка с запятой. В C++ каждая команда заканчивается ею.</p>
+    <p class="en"><b>;</b> — semicolon. In C++ every command ends with it.</p>
+
+    <h2>Как выглядит первая программа</h2>
+    <h2 class="en">What the first program looks like</h2>
+
+<pre><code>#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+    return 0;
+}</code></pre>
+
+    <p>Это стандартный каркас. Первая строка — подключает iostream. Вторая — открывает главную функцию main. Внутри — команда вывода. В конце — возврат нуля.</p>
+    <p class="en">This is the standard skeleton. The first line includes iostream. The second opens main. Inside — a print command. At the end — return zero.</p>
+
+    <h2>Как скомпилировать и запустить</h2>
+    <h2 class="en">How to compile and run</h2>
+
+<pre><code>g++ main.cpp -o main
+./main</code></pre>
+
+    <p>Первая команда — компилирует. Вторая — запускает. В Windows вторая команда: <b>main.exe</b>.</p>
+    <p class="en">The first command compiles. The second runs. On Windows the second is <b>main.exe</b>.</p>
+
+    <h2>Задача 1. Напиши Hello, world! с нуля</h2>
+    <h2 class="en">Task 1. Write Hello, world! from scratch</h2>
+
+    <p>Редактор пустой. Ты должен сам написать всю программу. При наборе будут подсказки — как в CLion.</p>
+    <p class="en">The editor is empty. You must write the whole program yourself. As you type, hints appear — like in CLion.</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cout,Hello, world!,return 0"
+         data-output="Hello, world!">
+        <div class="editor-header">
+            <span class="dot red"></span>
+            <span class="dot amber"></span>
+            <span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши программу тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+            <button type="button" class="reset-btn">Очистить</button>
+        </div>
+        <pre class="output">Напиши код и нажми «Проверить». Пока пишешь — снизу появятся подсказки.</pre>
+    </div>
+
+    <h2>Задача 2. Выведи своё имя</h2>
+    <h2 class="en">Task 2. Print your name</h2>
+
+    <p>Напиши программу с нуля, которая выводит твоё имя. Например: «Меня зовут Алекс».</p>
+    <p class="en">Write a program from scratch that prints your name. For example: "My name is Alex".</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cout,Меня зовут,return 0"
+         data-output="Меня зовут Алекс">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 3. Три строки</h2>
+    <h2 class="en">Task 3. Three lines</h2>
+
+    <p>Напиши программу, которая выводит три строки, каждая с новой строки. Используй std::endl три раза.</p>
+    <p class="en">Write a program that prints three lines, each on a new line. Use std::endl three times.</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cout,std::endl,std::endl,std::endl,return 0"
+         data-output="Меня зовут Алекс
+Я учу C++
+Это мой первый день">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task3.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l2">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 2 ============ -->
+<section class="page" id="l2">
+    <h1>Урок 2. Переменные и типы данных</h1>
+    <h1 class="en">Lesson 2. Variables and data types</h1>
+
+    <p>Этот урок — для полных чайников. Разберём, что такое переменная, зачем нужны типы, какие типы есть в C++, как объявить переменную, как её напечатать и как что-то в неё записать с клавиатуры.</p>
+    <p class="en">This lesson is for complete beginners. We'll cover what a variable is, why types exist, which types C++ has, how to declare a variable, how to print it, and how to read something into it from the keyboard.</p>
+
+    <h2>Что такое переменная</h2>
+    <h2 class="en">What a variable is</h2>
+
+    <p>Переменная — это ячейка в памяти компьютера, у которой есть имя. В неё можно положить значение: число, букву, текст. Потом это значение можно менять. Представь коробку с наклейкой: на наклейке — имя (например, age), внутри — значение (например, 15).</p>
+    <p class="en">A variable is a memory cell with a name. You can put a value in it: a number, a letter, a text. Later you can change that value. Imagine a box with a label: the label is the name (for example, age), inside is the value (for example, 15).</p>
+
+    <h2>Зачем нужны типы данных</h2>
+    <h2 class="en">Why data types are needed</h2>
+
+    <p>У каждой переменной есть тип. Тип говорит компьютеру, что за данные лежат внутри: целое число, дробное, буква, текст. От этого зависит, сколько памяти выделить и как обрабатывать значение.</p>
+    <p class="en">Every variable has a type. The type tells the computer what kind of data is inside: whole number, decimal, letter, text. This affects how much memory to allocate and how to process it.</p>
+
+    <p>Например, целое число 5 хранится иначе, чем дробное 5.5, а буква 'A' — иначе, чем строка "Alex". Поэтому в C++ у каждой переменной должен быть указан тип.</p>
+    <p class="en">For example, the whole number 5 is stored differently from the decimal 5.5, and the letter 'A' differently from the string "Alex". That's why in C++ every variable must have a type.</p>
+
+    <h2>Основные типы C++</h2>
+    <h2 class="en">Main C++ types</h2>
+
+    <ul>
+        <li><b>int</b> — целое число. Пример: 5, -10, 100, 0.</li>
+        <li class="en"><b>int</b> — whole number. Example: 5, -10, 100, 0.</li>
+        <li><b>double</b> — дробное число. Пример: 3.14, -0.5, 2.0.</li>
+        <li class="en"><b>double</b> — decimal number. Example: 3.14, -0.5, 2.0.</li>
+        <li><b>char</b> — один символ в одинарных кавычках. Пример: 'A', 'z', '5'.</li>
+        <li class="en"><b>char</b> — one character in single quotes. Example: 'A', 'z', '5'.</li>
+        <li><b>bool</b> — правда или ложь. Значения: true, false.</li>
+        <li class="en"><b>bool</b> — true or false.</li>
+        <li><b>std::string</b> — строка текста в двойных кавычках. Пример: "Привет".</li>
+        <li class="en"><b>std::string</b> — text string in double quotes. Example: "Hello".</li>
+    </ul>
+
+    <p>Символ пишется в одинарных кавычках ('A'), а строка — в двойных ("Alex"). Это разные вещи.</p>
+    <p class="en">A character uses single quotes ('A'), a string uses double quotes ("Alex"). Different things.</p>
+
+    <h2>Как объявить переменную</h2>
+    <h2 class="en">How to declare a variable</h2>
+
+<pre><code>int age = 15;
+double height = 1.75;
+char grade = 'A';
+bool isStudent = true;
+std::string name = "Alex";</code></pre>
+
+    <p>Сначала тип, потом имя, потом =, потом значение. Каждая строка заканчивается точкой с запятой.</p>
+    <p class="en">First the type, then the name, then =, then the value. Each line ends with a semicolon.</p>
+
+    <h2>Правила имени переменной</h2>
+    <h2 class="en">Variable name rules</h2>
+
+    <ul>
+        <li>Можно: латинские буквы, цифры, подчёркивание</li>
+        <li class="en">Allowed: Latin letters, digits, underscore</li>
+        <li>Должно начинаться с буквы: age, myVar, x1</li>
+        <li class="en">Must start with a letter: age, myVar, x1</li>
+        <li>Нельзя: пробелы, русские буквы, знаки</li>
+        <li class="en">Not allowed: spaces, non-Latin letters, symbols</li>
+        <li>Регистр важен: age и Age — разные</li>
+        <li class="en">Case matters: age and Age are different</li>
+    </ul>
+
+    <h2>Как напечатать переменную</h2>
+    <h2 class="en">How to print a variable</h2>
+
+<pre><code>std::cout &lt;&lt; "Name: " &lt;&lt; name &lt;&lt; std::endl;
+std::cout &lt;&lt; "Age: " &lt;&lt; age &lt;&lt; std::endl;</code></pre>
+
+    <p>Можно печатать текст и переменные вместе через &lt;&lt;. Компилятор сам подставит значение переменной.</p>
+    <p class="en">You can print text and variables together with &lt;&lt;. The compiler inserts the value in the right place.</p>
+
+    <h2>Арифметика</h2>
+    <h2 class="en">Arithmetic</h2>
+
+    <ul>
+        <li><b>+</b> сложение, <b>-</b> вычитание, <b>*</b> умножение, <b>/</b> деление</li>
+        <li class="en"><b>+</b> addition, <b>-</b> subtraction, <b>*</b> multiplication, <b>/</b> division</li>
+        <li><b>%</b> остаток от деления: 5 % 2 = 1</li>
+        <li class="en"><b>%</b> remainder: 5 % 2 = 1</li>
+        <li><b>a++</b> увеличить на 1, <b>a--</b> уменьшить на 1</li>
+        <li class="en"><b>a++</b> increase by 1, <b>a--</b> decrease by 1</li>
+    </ul>
+
+    <h2>Ввод с клавиатуры</h2>
+    <h2 class="en">Input from the keyboard</h2>
+
+<pre><code>int n;
+std::cin &gt;&gt; n;
+std::cout &lt;&lt; "You entered: " &lt;&lt; n &lt;&lt; std::endl;</code></pre>
+
+    <p>cin останавливает программу и ждёт, пока пользователь введёт число и нажмёт Enter.</p>
+    <p class="en">cin pauses the program and waits for the user to type a number and press Enter.</p>
+
+    <h2>Задача 1. Выведи переменные</h2>
+    <h2 class="en">Task 1. Print variables</h2>
+
+    <p>Напиши программу, которая создаёт переменные age (int), height (double), name (string) и печатает их.</p>
+    <p class="en">Write a program that creates variables age (int), height (double), name (string) and prints them.</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,int age,double height,string name,cout,return 0"
+         data-output="Name: Alex
+Age: 15
+Height: 1.75">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Сумма двух чисел</h2>
+    <h2 class="en">Task 2. Sum of two numbers</h2>
+
+    <p>Спроси два числа через cin, сложи и выведи сумму.</p>
+    <p class="en">Ask for two numbers via cin, add them, print the sum.</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,int a,int b,cin,cout,a + b,return 0"
+         data-output="Sum: 15">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l3">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 3 ============ -->
+<section class="page" id="l3">
+    <h1>Урок 3. Условия</h1>
+    <h1 class="en">Lesson 3. Conditions</h1>
+
+    <p>Условие — это проверка «правда или ложь». Если правда — один блок кода, если ложь — другой. Как развилка на дороге.</p>
+    <p class="en">A condition is a check "true or false". If true — one block, if false — another. Like a fork in the road.</p>
+
+    <h2>Операторы сравнения</h2>
+    <h2 class="en">Comparison operators</h2>
+
+    <ul>
+        <li><b>==</b> равно. 5 == 5 → true</li>
+        <li class="en"><b>==</b> equal. 5 == 5 → true</li>
+        <li><b>!=</b> не равно</li>
+        <li class="en"><b>!=</b> not equal</li>
+        <li><b>&gt;</b> больше, <b>&lt;</b> меньше</li>
+        <li class="en"><b>&gt;</b> greater, <b>&lt;</b> less</li>
+        <li><b>&gt;=</b> больше или равно, <b>&lt;=</b> меньше или равно</li>
+        <li class="en"><b>&gt;=</b> greater or equal, <b>&lt;=</b> less or equal</li>
+    </ul>
+
+    <p><b>Важно:</b> == это сравнение, = это присваивание.</p>
+    <p class="en"><b>Important:</b> == is comparison, = is assignment.</p>
+
+    <h2>Логические операторы</h2>
+    <h2 class="en">Logical operators</h2>
+
+    <ul>
+        <li><b>&amp;&amp;</b> — «И», <b>||</b> — «ИЛИ», <b>!</b> — «НЕ»</li>
+        <li class="en"><b>&amp;&amp;</b> — AND, <b>||</b> — OR, <b>!</b> — NOT</li>
+    </ul>
+
+    <h2>Как работает if / else</h2>
+    <h2 class="en">How if / else works</h2>
+
+<pre><code>if (n &gt; 0) {
+    std::cout &lt;&lt; "Positive" &lt;&lt; std::endl;
+} else if (n &lt; 0) {
+    std::cout &lt;&lt; "Negative" &lt;&lt; std::endl;
+} else {
+    std::cout &lt;&lt; "Zero" &lt;&lt; std::endl;
+}</code></pre>
+
+    <h2>Задача 1. Чётное или нечётное</h2>
+    <h2 class="en">Task 1. Even or odd</h2>
+
+    <p>Спроси число и определи, чётное оно или нечётное. Подсказка: n % 2 == 0 — чётное.</p>
+    <p class="en">Ask for a number and determine if it's even or odd. Hint: n % 2 == 0 — even.</p>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cin,if,n % 2 == 0,else,cout,return 0"
+         data-output="Odd">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Максимум из трёх</h2>
+    <h2 class="en">Task 2. Max of three</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cin,int m = a,if (b &gt; m),if (c &gt; m),cout,return 0"
+         data-output="Max: 12">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l4">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 4 ============ -->
+<section class="page" id="l4">
+    <h1>Урок 4. Циклы</h1>
+    <h1 class="en">Lesson 4. Loops</h1>
+
+    <p>Цикл повторяет код много раз. В C++ три вида: for, while, do-while.</p>
+    <p class="en">A loop repeats code many times. In C++ there are three kinds: for, while, do-while.</p>
+
+<pre><code>for (int i = 1; i &lt;= 5; i++) {
+    std::cout &lt;&lt; i &lt;&lt; std::endl;
+}</code></pre>
+
+<pre><code>int n = 10;
+while (n &gt; 0) {
+    std::cout &lt;&lt; n &lt;&lt; std::endl;
+    n--;
+}</code></pre>
+
+    <h2>break и continue</h2>
+    <h2 class="en">break and continue</h2>
+
+    <ul>
+        <li><b>break;</b> — выйти из цикла досрочно</li>
+        <li class="en"><b>break;</b> — exit the loop early</li>
+        <li><b>continue;</b> — пропустить текущий круг</li>
+        <li class="en"><b>continue;</b> — skip the current round</li>
+    </ul>
+
+    <h2>Задача 1. Сумма от 1 до N</h2>
+    <h2 class="en">Task 1. Sum 1..N</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cin,int sum = 0,for,sum += i,cout,return 0"
+         data-output="Sum: 15">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Факториал</h2>
+    <h2 class="en">Task 2. Factorial</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,cin,long long,f *= i,cout,return 0"
+         data-output="5! = 120">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l5">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 5 ============ -->
+<section class="page" id="l5">
+    <h1>Урок 5. Массивы</h1>
+    <h1 class="en">Lesson 5. Arrays</h1>
+
+    <p>Массив — список однотипных значений под одним именем. Нумерация с нуля.</p>
+    <p class="en">An array is a list of values of the same type under one name. Indexing from zero.</p>
+
+<pre><code>int numbers[5] = {10, 20, 30, 40, 50};
+std::cout &lt;&lt; numbers[0]; // 10</code></pre>
+
+    <h2>Задача 1. Минимум и максимум</h2>
+    <h2 class="en">Task 1. Min and max</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,int a[7],int mn = a[0],int mx = a[0],for,if (a[i] &lt; mn),if (a[i] &gt; mx),cout,return 0"
+         data-output="Min: 1
+Max: 9">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Разворот массива</h2>
+    <h2 class="en">Task 2. Reverse array</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,int a[5],for,a[i] = a[4 - i],cout,return 0"
+         data-output="5 4 3 2 1">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l6">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 6 ============ -->
+<section class="page" id="l6">
+    <h1>Урок 6. Функции</h1>
+    <h1 class="en">Lesson 6. Functions</h1>
+
+    <p>Функция — блок кода, который можно вызывать много раз. У неё есть имя, параметры и возвращаемое значение.</p>
+    <p class="en">A function is a block of code you can call many times. It has a name, parameters and a return value.</p>
+
+<pre><code>int sum(int a, int b) {
+    return a + b;
+}</code></pre>
+
+    <h2>Рекурсия</h2>
+    <h2 class="en">Recursion</h2>
+
+<pre><code>int fact(int n) {
+    if (n &lt;= 1) return 1;
+    return n * fact(n - 1);
+}</code></pre>
+
+    <h2>Задача 1. Минимум из двух</h2>
+    <h2 class="en">Task 1. Min of two</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int min2,int a,int b,return,cout,return 0"
+         data-output="Min: 3">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Рекурсивный факториал</h2>
+    <h2 class="en">Task 2. Recursive factorial</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int fact,if (n &lt;= 1),return n * fact(n - 1),cout,return 0"
+         data-output="6! = 720">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l7">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 7 ============ -->
+<section class="page" id="l7">
+    <h1>Урок 7. Указатели и память</h1>
+    <h1 class="en">Lesson 7. Pointers and memory</h1>
+
+    <p>У переменной в памяти есть адрес. Указатель — переменная, которая хранит адрес другой переменной.</p>
+    <p class="en">Every variable in memory has an address. A pointer is a variable that stores the address of another variable.</p>
+
+<pre><code>int x = 5;
+int* p = &amp;x;
+*p = 10;
+std::cout &lt;&lt; x; // 10</code></pre>
+
+    <h2>Динамическая память</h2>
+    <h2 class="en">Dynamic memory</h2>
+
+<pre><code>int* arr = new int[10];
+arr[0] = 42;
+delete[] arr;</code></pre>
+
+    <h2>Задача 1. Swap через указатели</h2>
+    <h2 class="en">Task 1. Swap via pointers</h2>
+
+    <div class="editor"
+         data-check="include,iostream,void swap,int*,*a = *b,cout,return 0"
+         data-output="After swap: 8 3">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Динамический массив</h2>
+    <h2 class="en">Task 2. Dynamic array</h2>
+
+    <div class="editor"
+         data-check="include,iostream,int main,new int[10],for,delete[] a,return 0"
+         data-output="1 2 3 4 5 6 7 8 9 10">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l8">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 8 ============ -->
+<section class="page" id="l8">
+    <h1>Урок 8. Строки и STL</h1>
+    <h1 class="en">Lesson 8. Strings and STL</h1>
+
+    <p>STL — Standard Template Library. Готовые контейнеры и алгоритмы.</p>
+    <p class="en">STL — Standard Template Library. Ready-made containers and algorithms.</p>
+
+<pre><code>#include &lt;vector&gt;
+#include &lt;algorithm&gt;
+
+std::vector&lt;int&gt; v = {5, 2, 8, 1};
+std::sort(v.begin(), v.end());</code></pre>
+
+    <h2>Задача 1. Палиндром</h2>
+    <h2 class="en">Task 1. Palindrome</h2>
+
+    <div class="editor"
+         data-check="include,iostream,string,bool isPal,s[i++] != s[j--],return true,return false,cout,return 0"
+         data-output="level → 1
+hello → 0">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Разворот строки</h2>
+    <h2 class="en">Task 2. Reverse string</h2>
+
+    <div class="editor"
+         data-check="include,iostream,string,algorithm,reverse(s.begin(), s.end()),cout,return 0"
+         data-output="gnimmargorp">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l9">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 9 ============ -->
+<section class="page" id="l9">
+    <h1>Урок 9. Структуры данных</h1>
+    <h1 class="en">Lesson 9. Data structures</h1>
+
+    <p>map, set, stack, queue — инструменты для разных задач.</p>
+    <p class="en">map, set, stack, queue — tools for different tasks.</p>
+
+<pre><code>#include &lt;map&gt;
+std::map&lt;std::string, int&gt; ages;
+ages["Alex"] = 15;</code></pre>
+
+    <h2>Задача 1. Уникальные числа</h2>
+    <h2 class="en">Task 1. Unique numbers</h2>
+
+    <div class="editor"
+         data-check="include,iostream,set,s.insert,for,cout,return 0"
+         data-output="1 2 3 5 9">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task1.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. Стек</h2>
+    <h2 class="en">Task 2. Stack</h2>
+
+    <div class="editor"
+         data-check="include,iostream,stack,st.push,while,st.top(),st.pop(),cout,return 0"
+         data-output="3 2 1">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">task2.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="l10">Следующий урок →</button>
+</section>
+
+<!-- ============ УРОК 10 ============ -->
+<section class="page" id="l10">
+    <h1>Урок 10. Финальные задачи</h1>
+    <h1 class="en">Lesson 10. Final tasks</h1>
+
+    <p>Решить их может только тот, кто точно знает плюсы и умеет думать логически, как опытный C++ программист.</p>
+    <p class="en">Only someone who really knows C++ and can think logically like an experienced C++ programmer can solve them.</p>
+
+    <h2>Задача 1. «Ход коня»</h2>
+    <h2 class="en">Task 1. "Knight's Tour"</h2>
+
+    <p>Конь обходит все 64 клетки доски 8×8, побывав на каждой ровно один раз. Через рекурсию и backtracking.</p>
+    <p class="en">A knight visits all 64 cells of an 8×8 board exactly once. Via recursion and backtracking.</p>
+
+    <div class="editor"
+         data-check="include,iostream,const int N = 8,int board[N][N],int dx[8],int dy[8],bool solve,solve(nx, ny, step + 1),board[nx][ny] = -1,cout,return 0"
+         data-output="   0  59  38  33  30  17   8  63
+  37  34  31  60   9  62  29  16
+  58   1  36  39  32  27  18   7
+  35  48  41  26  61  10  15  28
+  42  57   2  49  40  23   6  19
+  47  50  45  54  25  20  11  14
+  56  43  52   3  22  13  24   5
+  51  46  55  44  53   4  21  12">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">knight.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 2. «N ферзей»</h2>
+    <h2 class="en">Task 2. "N-Queens"</h2>
+
+    <p>Расставь N ферзей на доске N×N так, чтобы никто не бил другого.</p>
+    <p class="en">Place N queens on an N×N board so no two attack each other.</p>
+
+    <div class="editor"
+         data-check="include,iostream,const int N = 8,int col[N],bool ok,bool solve,col[row] = c,solve(row + 1),cout,return 0"
+         data-output=". Q . . . . . .
+. . . Q . . . .
+. . . . . Q . .
+. . . . . . . Q
+. . Q . . . . .
+Q . . . . . . .
+. . . . . . Q .
+. . . . Q . . .">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">queens.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <h2>Задача 3. «Коммивояжёр»</h2>
+    <h2 class="en">Task 3. "Travelling Salesman"</h2>
+
+    <p>NP-полная задача. Точное решение для больших N невозможно.</p>
+    <p class="en">NP-complete. Exact solution for large N is impossible.</p>
+
+    <div class="editor"
+         data-check="include,iostream,algorithm,vector,INT_MAX,next_permutation,cost,cout,return 0"
+         data-output="Best route cost: 80">
+        <div class="editor-header">
+            <span class="dot red"></span><span class="dot amber"></span><span class="dot green"></span>
+            <span class="editor-title">tsp.cpp</span>
+        </div>
+        <div class="code-wrap">
+            <pre class="highlight-layer" aria-hidden="true"></pre>
+            <textarea spellcheck="false" placeholder="Напиши код тут..."></textarea>
+        </div>
+        <div class="suggestions"></div>
+        <div class="editor-controls">
+            <button type="button" class="run-btn">Проверить</button>
+        </div>
+        <pre class="output">Результат проверки:…</pre>
+    </div>
+
+    <button type="button" class="btn-next" data-page="home">На главную</button>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2025 C++ COURSE</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
